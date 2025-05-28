@@ -1,1190 +1,175 @@
-/* Hide legacy elements */
-.LANDING .component,
-.LANDING .INICIO-2,
-.LANDING .property-default,
-.LANDING .property-variant,
-.LANDING .SOBRE-n-s {
-  display: none !important;
-}
-
-.LANDING {
+.BANCOS-i {
   display: flex;
   flex-direction: column;
   width: 1920px;
-  height: auto;
   align-items: center;
   position: relative;
-  background-color: #d9d9d9;
-  overflow: hidden;
   margin: 0 auto;
+  background-color: #d9d9d9;
 }
 
-.LANDING .frame {
-  position: fixed;
+.BANCOS-i .AGRICULTURA {
+  display: flex;
+  flex-direction: column;
+  height: 960px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px 60px;
+  position: relative;
   width: 1920px;
-  height: 100px;
-  overflow: hidden;
   background-color: #d9d9d9;
-  z-index: 1000;
-  margin: 0;
-  top: 0;
+}
+
+.BANCOS-i .frame {
+  display: flex;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.BANCOS-i .text-wrapper {
+  position: relative;
+  flex: 1;
+  height: 160px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #2e7d32;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BANCOS-i .div {
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.BANCOS-i .frame-2 {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BANCOS-i .frame-wrapper {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #2e7d32;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BANCOS-i .frame-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.BANCOS-i .rectangle {
+  width: 330px;
+  height: 330px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.BANCOS-i .mesa-de-jantar-maci {
+  width: 100%;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 15px 0;
+}
+
+.BANCOS-i .button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.BANCOS-i .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #2e7d32;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 5px 4.8px 2px #00000080;
+}
+
+.BANCOS-i .text-wrapper {
+  width: fit-content;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #cfcfcf;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BANCOS-i .overlap {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BANCOS-i .overlap-wrapper {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BANCOS-i .home {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.LANDING .frame::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-
-.LANDING .HEADER {
-  position: relative;
-  width: 1920px;
-  height: 100px;
-  background-color: #d9d9d9;
-  overflow: hidden;
-  border-bottom: 2px solid #2e7d32;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.LANDING .HEADER::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-
-.LANDING .INICIO {
+.BANCOS-i .arrow-right-circle {
   position: absolute;
-  width: 44px;
-  height: 29px;
-  top: 39px;
-  left: 717px;
-}
-
-.LANDING .text-wrapper-2 {
-  position: absolute;
-  width: 76px;
-  top: 39px;
-  left: 785px;
-  font-family: "Istok Web", Helvetica;
-  font-weight: 400;
-  color: #146332;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.LANDING .overlap-group {
-  position: absolute;
-  width: 213px;
-  height: 29px;
-  top: 39px;
-  left: 880px;
-}
-
-.LANDING .AGRICULTURA {
-  position: absolute;
-  width: 136px;
-  height: 29px;
-  top: 0;
-  left: 0;
-}
-
-.LANDING .PECURIA {
-  position: absolute;
-  width: 92px;
-  height: 29px;
-  top: 0;
-  left: 121px;
-}
-
-.LANDING .YUSARA {
-  position: absolute;
-  width: 84px;
-  height: 29px;
-  top: 39px;
-  left: 1093px;
-}
-
-.LANDING .overlap {
-  position: absolute;
-  width: 230px;
-  height: 30px;
-  top: 38px;
-  left: 1177px;
-}
-
-.LANDING .FOREST-CREATION {
-  position: absolute;
-  width: 181px;
-  height: 29px;
-  top: 1px;
-  left: 0;
-}
-
-.LANDING .div {
-  position: absolute;
-  top: 0;
-  left: 161px;
-  font-family: "Istok Web", Helvetica;
-  font-weight: 400;
-  color: #146332;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.LANDING .text-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: "Istok Web", Helvetica;
-  font-weight: 400;
-  color: #146332 !important;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.LANDING .text-wrapper:hover,
-.LANDING .text-wrapper-2:hover,
-.LANDING .INICIO a:hover,
-.LANDING .div a:hover {
-  text-decoration: none;
-  transform: scale(1.1);
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.LANDING .INICIO a,
-.LANDING .div a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 0;
-}
-
-.LANDING .logo-payaguay {
-  position: absolute;
-  width: 336px;
-  height: 80px;
-  top: 14px;
-  left: 345px;
-  object-fit: cover;
-}
-
-.LANDING .VIDEO-INICIAL {
-  position: relative !important;
-  width: 100% !important;
-  height: 100vh !important;
-  overflow: hidden !important;
-  background-color: #000 !important;
-  padding-top: 0 !important;
-  margin-top: 0;
-  min-height: 960px;
-}
-
-.LANDING .VIDEO-INICIAL > div {
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 100% !important;
-  height: 100% !important;
-  padding: 0 !important;
-}
-
-.LANDING .VIDEO-INICIAL iframe {
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  width: 200vw !important;
-  height: 200vh !important;
-  transform: translate(-50%, -50%) scale(0.75) !important;
-  object-fit: cover !important;
-  pointer-events: none !important;
-  margin-top: 0 !important;
-}
-
-.LANDING .FILOSOFIA {
-  position: relative;
-  width: 100%;
-  height: 1021px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 100px 20px 60px;
-  background-size: cover;
-  background-position: 50% 50%;
-  margin-top: 0;
-}
-
-.LANDING .group {
-  position: relative;
-  height: 1020px;
-  top: 1px;
-}
-
-.LANDING .frame-2 {
-  position: relative;
-  width: 1920px;
-  height: 1020px;
-}
-
-.LANDING .FILOSOFIA-2 {
-  display: flex;
-  width: 1920px;
-  height: 1021px;
-  align-items: flex-start;
-  padding: 120px 391px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-image: url(https://c.animaapp.com/acircye9/img/filosofia.svg);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.LANDING .frame-wrapper {
-  display: flex;
-  width: 559px;
-  height: 1071px;
-  align-items: flex-start;
-  gap: 110px;
-  padding: 110px 0px;
-  position: relative;
-  margin-bottom: -290.00px;
-}
-
-.LANDING .frame-3 {
-  position: relative;
-  width: 526px;
-  height: 704px;
-}
-
-.LANDING .CAIXA-DE-TEXTO {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.LANDING .overlap-group-2 {
-  position: relative;
-  width: 100%;
-  max-width: 806px;
-  height: 301px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 25vh;
-}
-
-.LANDING .rectangle {
-  position: absolute;
-  width: 806px;
-  height: 301px;
-  top: 0;
-  left: 0;
-  border-radius: 0px 70px;
-  opacity: 0.8;
-  background: #D9D9D9;
-}
-
-/* Estilo específico para o retângulo do Yu'sara */
-.LANDING .CAIXA-DE-TEXTO-wrapper .overlap-group-2 {
-  position: absolute;
-  width: 100vw;
-  left: 0;
+  width: 89px;
+  height: 89px;
+  bottom: -40px;
   right: 0;
-  margin: 0;
-  background: #7932d7;
-  height: 301px;
-  bottom: 25vh;
-  transform: none;
-  padding: 0;
-  max-width: none;
 }
 
-.LANDING .CAIXA-DE-TEXTO-wrapper .rectangle {
-  display: none;
-}
-
-.LANDING .p,
-.LANDING .div-2 {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  padding: 20px 40px;
-  font-family: "Roboto", Helvetica;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 1.5;
-  color: #000000;
-  text-align: center;
-}
-
-.LANDING .span {
-  display: block;
-  font-family: "Roboto", Helvetica;
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #2e7d32;
-  text-align: center;
-}
-
-/* Estilo específico para o Yu'sara */
-.LANDING .CAIXA-DE-TEXTO-wrapper .p {
-  color: #ffffff;
-  max-width: 806px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  padding: 20px 40px;
-}
-
-.LANDING .CAIXA-DE-TEXTO-wrapper .span {
-  color: #ffffff;
-  position: relative;
-  z-index: 2;
-}
-
-.LANDING .text-wrapper-5 {
-  font-family: "Roboto", Helvetica;
-  font-weight: 400;
-  display: block;
-  text-align: center;
-}
-
-.LANDING .text-wrapper-3 {
-  font-size: 24px;
-  color: #146332;
-  font-family: "Roboto", Helvetica;
-}
-
-.LANDING .text-wrapper-4,
-.LANDING .text-wrapper-5 {
-  font-size: 16px;
-  line-height: 1.6;
-  display: block;
-  margin-top: 10px;
-  font-family: "Roboto", Helvetica;
-}
-
-.LANDING .AGRICULTURA-2 {
-  display: flex;
-  height: 1021px;
-  align-items: flex-start;
-  padding: 120px 391px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  overflow: hidden;
-  background-image: url(https://c.animaapp.com/acircye9/img/agricultura.svg);
-  background-size: cover;
-  background-position: 50% 50%;
-  margin-top: 0;
-}
-
-.LANDING .PECUARIA {
-  background-image: url(https://c.animaapp.com/acircye9/img/pecuaria.png);
-  display: flex;
-  height: 1058px;
-  align-items: flex-start;
-  padding: 120px 391px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-  margin-top: 0;
-}
-
-.LANDING .overlap-group-3 {
-  position: relative;
-  width: 806px;
-  height: 301px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.LANDING .CONTATO {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  min-height: auto;
-  align-items: flex-start;
-  padding: 60px 391px 30px;
-  position: relative;
-  width: 1920px;
-  background-color: #daf1d5;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.LANDING .group-wrapper {
-  position: relative;
-  width: 1193.49px;
-  height: auto;
-  margin-right: -55.49px;
-  padding: 20px 0;
-}
-
-.LANDING .group-2 {
-  position: relative;
-  width: 1193px;
-  height: 424px;
-}
-
-.LANDING .group-3 {
+.BANCOS-i .arrow-left-circle {
   position: absolute;
-  width: 208px;
-  height: 173px;
-  top: 232px;
-  left: 914px;
-}
-
-.LANDING .div-3 {
-  position: absolute;
-  width: 51px;
-  height: 56px;
-  top: 0;
+  width: 86px;
+  height: 86px;
+  bottom: -40px;
   left: 0;
-}
-
-.LANDING .ellipse {
-  width: 48px;
-  height: 48px;
-  background-color: #daf1d5;
-  border-radius: 24px;
-}
-
-.LANDING .img {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 12px;
-  left: 12px;
-}
-
-.LANDING .text-wrapper-6 {
-  position: absolute;
-  width: 145px;
-  top: 84px;
-  left: 1px;
-  font-family: "Libre Baskerville", Helvetica;
-  font-weight: 400;
-  color: var(--text-gray-900);
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: 38.4px;
-  white-space: nowrap;
-}
-
-.LANDING .icons-linkedin {
-  position: absolute;
-  width: 26px;
-  height: 28px;
-  top: 145px;
-  left: 180px;
-}
-
-.LANDING .icons-instagram {
-  left: 120px;
-  position: absolute;
-  width: 26px;
-  height: 28px;
-  top: 145px;
-}
-
-.LANDING .icons-twitter {
-  left: 60px;
-  position: absolute;
-  width: 26px;
-  height: 28px;
-  top: 145px;
-}
-
-.LANDING .icons-facebook {
-  left: 0;
-  position: absolute;
-  width: 26px;
-  height: 28px;
-  top: 145px;
-}
-
-.LANDING .group-4 {
-  position: absolute;
-  width: 301px;
-  height: 176px;
-  top: 0;
-  left: 0;
-}
-
-.LANDING .overlap-group-wrapper {
-  position: absolute;
-  width: 64px;
-  height: 56px;
-  top: 0;
-  left: 0;
-}
-
-.LANDING .img-wrapper {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  background-color: #daf1d5;
-  border-radius: 24px;
-}
-
-.LANDING .text-wrapper-7 {
-  position: absolute;
-  width: 109px;
-  top: 84px;
-  left: 1px;
-  font-family: "Libre Baskerville", Helvetica;
-  font-weight: 400;
-  color: var(--text-gray-900);
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: 38.4px;
-  white-space: nowrap;
-}
-
-.LANDING .text-wrapper-8 {
-  position: absolute;
-  width: 297px;
-  top: 147px;
-  left: 0;
-  font-family: "Josefin Sans", Helvetica;
-  font-weight: 400;
-  color: var(--secondary-text);
-  font-size: 22px;
-  letter-spacing: 0;
-  line-height: 28.6px;
-  white-space: nowrap;
-}
-
-.LANDING .group-5 {
-  position: absolute;
-  width: 341px;
-  height: 216px;
-  top: 208px;
-  left: 0;
-}
-
-.LANDING .text-wrapper-9 {
-  position: absolute;
-  width: 278px;
-  top: 84px;
-  left: 1px;
-  font-family: "Libre Baskerville", Helvetica;
-  font-weight: 400;
-  color: var(--text-gray-900);
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: 38.4px;
-  white-space: nowrap;
-}
-
-.LANDING .div-wrapper {
-  position: absolute;
-  width: 339px;
-  height: 69px;
-  top: 147px;
-  left: 0;
-}
-
-.LANDING .group-6 {
-  position: relative;
-  width: 343px;
-  height: 69px;
-}
-
-.LANDING .text-wrapper-10 {
-  position: absolute;
-  width: 279px;
-  top: 0;
-  left: 0;
-  font-family: "Josefin Sans", Helvetica;
-  font-weight: 400;
-  color: var(--secondary-text);
-  font-size: 22px;
-  letter-spacing: 0;
-  line-height: 28.6px;
-  white-space: nowrap;
-}
-
-.LANDING .text-wrapper-11 {
-  position: absolute;
-  width: 339px;
-  top: 35px;
-  left: 0;
-  font-family: "Josefin Sans", Helvetica;
-  font-weight: 400;
-  color: var(--secondary-text);
-  font-size: 22px;
-  letter-spacing: 0;
-  line-height: 28.6px;
-  white-space: nowrap;
-}
-
-.LANDING .group-7 {
-  position: absolute;
-  width: 283px;
-  height: 181px;
-  top: 0;
-  left: 914px;
-}
-
-.LANDING .text-wrapper-12 {
-  position: absolute;
-  width: 279px;
-  top: 147px;
-  left: 0;
-  font-family: "Josefin Sans", Helvetica;
-  font-weight: 400;
-  color: var(--secondary-text);
-  font-size: 22px;
-  letter-spacing: 0;
-  line-height: 28.6px;
-  white-space: nowrap;
-}
-
-.LANDING .CAIXA-DE-TEXTO-wrapper {
-  position: relative;
-  width: 100%;
-  height: 1021px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 100px 0 60px;
-  overflow: hidden;
-  margin-top: 0;
-  background-color: #000;
-}
-
-.LANDING .CAIXA-DE-TEXTO-wrapper > div:first-child {
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 100% !important;
-  height: 100% !important;
-  padding: 0 !important;
-}
-
-.LANDING .CAIXA-DE-TEXTO-wrapper iframe {
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  width: 200vw !important;
-  height: 200vh !important;
-  transform: translate(-50%, -50%) scale(0.85) !important;
-  object-fit: cover !important;
-  pointer-events: none !important;
-  margin-top: 0 !important;
-  background-color: #000 !important;
-}
-
-.LANDING .yu-sara-al-m-disso-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 100px;
-}
-
-.LANDING .yu-sara-al-m-disso {
-  position: relative;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  font-family: "Roboto", Helvetica;
-  color: #333333;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.LANDING .PECUARIA-2 {
-  background-image: url(https://c.animaapp.com/acircye9/img/pecuaria-1.png);
-  display: flex;
-  height: 1058px;
-  align-items: flex-start;
-  padding: 120px 391px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-  margin-top: 0;
-}
-
-.LANDING .MOVEIS {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  align-items: center;
-  padding: 60px 20px;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(
-      0deg,
-      rgba(217, 217, 217, 1) 0%,
-      rgba(217, 217, 217, 1) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(218, 241, 213, 1) 0%,
-      rgba(218, 241, 213, 1) 100%
-    );
-}
-
-.LANDING .MOVEIS-2 {
-  width: 100%;
-  max-width: 1145px;
-  margin: 0 auto;
-}
-
-.LANDING .text-wrapper-13 {
-  font-family: "Roboto", Helvetica;
-  font-weight: 400;
-  color: #2e7d32;
-  font-size: 48px;
-  text-align: center;
-  letter-spacing: 5.60px;
-  line-height: 50px;
-  margin-bottom: 30px;
-}
-
-.LANDING .frame-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  width: 100%;
-}
-
-.LANDING .group-8,
-.LANDING .group-9,
-.LANDING .group-10,
-.LANDING .group-11 {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  width: 100%;
-  max-width: 1145px;
-  flex-wrap: wrap;
-}
-
-.LANDING .ellipse-2,
-.LANDING .ellipse-3,
-.LANDING .ellipse-4 {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-}
-
-.LANDING .MESAS-DE-JANTAR,
-.LANDING .MESAS-DE-CENTRO,
-.LANDING .APARADORES-ESTANTES,
-.LANDING .text-wrapper-14,
-.LANDING .text-wrapper-15,
-.LANDING .text-wrapper-16 {
-  font-family: "Roboto", Helvetica;
-  font-weight: 400;
-  color: #2e7d32;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 2.20px;
-  line-height: 32px;
-  text-decoration: none;
-  cursor: pointer;
-  width: 280px;
-}
-
-.LANDING .group-8 a {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.LANDING .MESAS-DE-JANTAR:hover,
-.LANDING .group-8 a:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.LANDING .FILOSOFIA,
-.LANDING .AGRICULTURA-2,
-.LANDING .PECUARIA,
-.LANDING .CAIXA-DE-TEXTO-wrapper,
-.LANDING .PECUARIA-2 {
-  position: relative;
-  width: 100%;
-  height: calc(100vh + 100px);
-  min-height: calc(960px + 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0;
-  padding-top: 100px;
-  background-size: cover;
-  background-position: 50% 50%;
-  margin-top: 0;
-  scroll-margin-top: calc(-100px - 15vh);
-  scroll-snap-align: start;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 1920px) {
-  .LANDING .FILOSOFIA,
-  .LANDING .AGRICULTURA-2,
-  .LANDING .PECUARIA,
-  .LANDING .CAIXA-DE-TEXTO-wrapper,
-  .LANDING .PECUARIA-2 {
-    padding-left: 391px;
-    padding-right: 391px;
-  }
-}
-
-.LANDING .overlap-group-2,
-.LANDING .overlap-group-3 {
-  margin-bottom: min(80px, 8vh);
-}
-
-@media screen and (max-height: 800px) {
-  .LANDING .overlap-group-2,
-  .LANDING .overlap-group-3 {
-    bottom: 20vh;
-  }
-  .LANDING .FILOSOFIA,
-  .LANDING .AGRICULTURA-2,
-  .LANDING .PECUARIA,
-  .LANDING .CAIXA-DE-TEXTO-wrapper,
-  .LANDING .PECUARIA-2 {
-    scroll-margin-top: calc(-100px - 10vh);
-  }
-}
-
-@media screen and (min-height: 1080px) {
-  .LANDING .overlap-group-2,
-  .LANDING .overlap-group-3 {
-    bottom: 30vh;
-  }
-  .LANDING .FILOSOFIA,
-  .LANDING .AGRICULTURA-2,
-  .LANDING .PECUARIA,
-  .LANDING .CAIXA-DE-TEXTO-wrapper,
-  .LANDING .PECUARIA-2 {
-    scroll-margin-top: calc(-100px - 20vh);
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .LANDING .overlap-group-2,
-  .LANDING .overlap-group-3 {
-    width: 806px;
-    bottom: 25vh;
-  }
-  .LANDING .CAIXA-DE-TEXTO-wrapper .overlap-group-2 {
-    width: 100vw;
-  }
-}
-
-.LANDING .AGRICULTURA-2 {
-  background-image: url(https://c.animaapp.com/acircye9/img/agricultura.svg);
-}
-
-.LANDING .PECUARIA {
-  background-image: url(https://c.animaapp.com/acircye9/img/pecuaria.png);
-}
-
-.LANDING .PECUARIA-2 {
-  background-image: url(https://c.animaapp.com/acircye9/img/pecuaria-1.png);
-}
-
-.LANDING .FILOSOFIA {
-  background-color: #ffffff;
-}
-
-.LANDING .CAIXA-DE-TEXTO-wrapper {
-  overflow: hidden;
-}
-
-.LANDING .CAIXA-DE-TEXTO-wrapper .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 1920px) {
-  .LANDING {
-    width: 100%;
-  }
-
-  .LANDING .frame,
-  .LANDING .HEADER {
-    width: 100%;
-  }
-
-  .LANDING .VIDEO-INICIAL,
-  .LANDING .FILOSOFIA,
-  .LANDING .AGRICULTURA-2,
-  .LANDING .PECUARIA,
-  .LANDING .CAIXA-DE-TEXTO-wrapper,
-  .LANDING .PECUARIA-2 {
-    width: 100%;
-  }
-
-  .LANDING .CAIXA-DE-TEXTO-wrapper .overlap-group-2 {
-    width: 100%;
-    transform: none;
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .LANDING .HEADER {
-    padding: 0 20px;
-  }
-
-  .LANDING .logo-payaguay {
-    width: 250px;
-    height: auto;
-    left: 20px;
-  }
-
-  .LANDING .INICIO {
-    left: 617px;
-  }
-
-  .LANDING .text-wrapper-2 {
-    left: 685px;
-  }
-
-  .LANDING .overlap-group {
-    left: 780px;
-  }
-
-  .LANDING .YUSARA {
-    left: 993px;
-  }
-
-  .LANDING .overlap {
-    left: 1077px;
-  }
-
-  .LANDING .FILOSOFIA,
-  .LANDING .AGRICULTURA-2,
-  .LANDING .PECUARIA,
-  .LANDING .CAIXA-DE-TEXTO-wrapper,
-  .LANDING .PECUARIA-2 {
-    padding: 100px 20px;
-  }
-
-  .LANDING .overlap-group-2,
-  .LANDING .overlap-group-3 {
-    width: 90%;
-    max-width: 806px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .LANDING .HEADER {
-    padding: 20px;
-    height: auto;
-  }
-
-  .LANDING .logo-payaguay {
-    width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .LANDING .INICIO {
-    left: 517px;
-  }
-
-  .LANDING .text-wrapper-2 {
-    left: 585px;
-  }
-
-  .LANDING .overlap-group {
-    left: 680px;
-  }
-
-  .LANDING .YUSARA {
-    left: 893px;
-  }
-
-  .LANDING .overlap {
-    left: 977px;
-  }
-
-  .LANDING .frame-4 {
-    padding: 0 20px;
-  }
-
-  .LANDING .group-8,
-  .LANDING .group-9,
-  .LANDING .group-10,
-  .LANDING .group-11 {
-    gap: 40px;
-  }
-
-  .LANDING .ellipse-2,
-  .LANDING .ellipse-3,
-  .LANDING .ellipse-4 {
-    width: 280px;
-    height: 280px;
-  }
-
-  .LANDING .MESAS-DE-JANTAR,
-  .LANDING .MESAS-DE-CENTRO,
-  .LANDING .APARADORES-ESTANTES,
-  .LANDING .text-wrapper-14,
-  .LANDING .text-wrapper-15,
-  .LANDING .text-wrapper-16 {
-    width: 280px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .LANDING .HEADER {
-    padding: 10px;
-  }
-
-  .LANDING .logo-payaguay {
-    width: 200px;
-  }
-
-  .LANDING .span {
-    font-size: 28px;
-  }
-
-  .LANDING .text-wrapper-5 {
-    font-size: 14px;
-  }
-
-  .LANDING .overlap-group-2 {
-    width: 90%;
-    height: auto;
-    min-height: 301px;
-    margin-bottom: 15vh;
-  }
-
-  .LANDING .CONTATO {
-    padding: 40px 20px;
-  }
-
-  .LANDING .group-wrapper {
-    width: 100%;
-    margin: 0;
-  }
-
-  .LANDING .group-2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .LANDING .group-3,
-  .LANDING .group-4,
-  .LANDING .group-5,
-  .LANDING .group-7 {
-    position: relative;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-
-  .LANDING .text-wrapper-13 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  .LANDING .frame-4 {
-    gap: 30px;
-  }
-
-  .LANDING .group-8,
-  .LANDING .group-9,
-  .LANDING .group-10,
-  .LANDING .group-11 {
-    gap: 30px;
-  }
-
-  .LANDING .ellipse-2,
-  .LANDING .ellipse-3,
-  .LANDING .ellipse-4 {
-    width: 240px;
-    height: 240px;
-  }
-
-  .LANDING .MESAS-DE-JANTAR,
-  .LANDING .MESAS-DE-CENTRO,
-  .LANDING .APARADORES-ESTANTES,
-  .LANDING .text-wrapper-14,
-  .LANDING .text-wrapper-15,
-  .LANDING .text-wrapper-16 {
-    width: 240px;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .LANDING .logo-payaguay {
-    width: 150px;
-  }
-
-  .LANDING .text-wrapper,
-  .LANDING .text-wrapper-2 {
-    font-size: 13px;
-  }
-
-  .LANDING .span {
-    font-size: 24px;
-  }
-
-  .LANDING .text-wrapper-5 {
-    font-size: 12px;
-  }
-
-  .LANDING .ellipse-2,
-  .LANDING .ellipse-3,
-  .LANDING .ellipse-4 {
-    width: 150px;
-    height: 150px;
-  }
-
-  .LANDING .MESAS-DE-JANTAR,
-  .LANDING .MESAS-DE-CENTRO,
-  .LANDING .APARADORES-ESTANTES,
-  .LANDING .text-wrapper-14,
-  .LANDING .text-wrapper-15,
-  .LANDING .text-wrapper-16 {
-    font-size: 18px;
-  }
 }

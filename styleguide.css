@@ -1,6 +1,4 @@
 :root {
-  --text-gray-900: rgba(24, 25, 31, 1);
-  --secondary-text: rgba(82, 85, 96, 1);
   --arboreal-online-semantic-button-upper-font-family: "Arial", Helvetica;
   --arboreal-online-semantic-button-upper-font-weight: 700;
   --arboreal-online-semantic-button-upper-font-size: 13px;
@@ -57,4 +55,10 @@
   --arboreal-online-montserrat-regular-letter-spacing: 0px;
   --arboreal-online-montserrat-regular-line-height: 27.299999237060547px;
   --arboreal-online-montserrat-regular-font-style: normal;
+  --single-line-body-base-font-family: "Inter", Helvetica;
+  --single-line-body-base-font-weight: 400;
+  --single-line-body-base-font-size: 16px;
+  --single-line-body-base-letter-spacing: 0px;
+  --single-line-body-base-line-height: 100%;
+  --single-line-body-base-font-style: normal;
 }
