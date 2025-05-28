@@ -44,6 +44,9 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .BANCOS-i .div {
@@ -120,17 +123,28 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 4px 5px 4.8px 2px #00000080;
+  width: auto;
+  min-width: 180px;
 }
 
-.BANCOS-i .text-wrapper {
+.BANCOS-i .button p.text-wrapper {
   width: fit-content;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
-  color: #cfcfcf;
+  color: #ffffff;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.BANCOS-i .button:hover {
+  transform: scale(1.05);
+  background-color: #1b5e20;
+  box-shadow: 6px 7px 6px 2px #00000080;
 }
 
 .BANCOS-i .overlap {
