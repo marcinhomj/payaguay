@@ -120,10 +120,9 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 4px 5px 4.8px 2px #00000080;
-  width: 200px;
 }
 
-.BANCOS-i .button .text-wrapper {
+.BANCOS-i .text-wrapper {
   width: fit-content;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
@@ -132,7 +131,6 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  white-space: nowrap;
 }
 
 .BANCOS-i .overlap {
