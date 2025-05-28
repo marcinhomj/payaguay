@@ -1,0 +1,232 @@
+.MESA-DE-CENTRO-IV {
+  display: flex;
+  flex-direction: column;
+  height: 1033px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 391px;
+  position: relative;
+  background-color: #c4c4c480;
+}
+
+.MESA-DE-CENTRO-IV .frame {
+  display: flex;
+  height: 191px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.MESA-DE-CENTRO-IV .MESAS-DE-CENTRO {
+  position: relative;
+  flex: 1;
+  height: 216px;
+  margin-top: -33.50px;
+  margin-bottom: -31.50px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #2e7d32;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MESA-DE-CENTRO-IV .div {
+  position: relative;
+  width: 1333px;
+  height: 598px;
+  margin-left: -97.50px;
+  margin-right: -97.50px;
+}
+
+.MESA-DE-CENTRO-IV .frame-2 {
+  position: absolute;
+  width: 378px;
+  height: 462px;
+  top: 0;
+  left: 96px;
+}
+
+.MESA-DE-CENTRO-IV .frame-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  height: 391px;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.MESA-DE-CENTRO-IV .frame-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: -36.00px;
+}
+
+.MESA-DE-CENTRO-IV .rectangle {
+  position: relative;
+  width: 377px;
+  height: 345px;
+  margin-left: -4.00px;
+  margin-right: -4.00px;
+}
+
+.MESA-DE-CENTRO-IV .mesa-de-jantar-maci {
+  position: relative;
+  width: 369px;
+  height: 75px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.MESA-DE-CENTRO-IV .button-wrapper {
+  position: absolute;
+  width: 378px;
+  height: 56px;
+  top: 391px;
+  left: 0;
+}
+
+.MESA-DE-CENTRO-IV .button {
+  position: relative;
+  left: 112px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #2e7d32;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 5px 4.8px 2px #00000080;
+}
+
+.MESA-DE-CENTRO-IV .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--single-line-body-base-font-family);
+  font-weight: var(--single-line-body-base-font-weight);
+  color: #cfcfcf;
+  font-size: var(--single-line-body-base-font-size);
+  text-align: center;
+  letter-spacing: var(--single-line-body-base-letter-spacing);
+  line-height: var(--single-line-body-base-line-height);
+  font-style: var(--single-line-body-base-font-style);
+}
+
+.MESA-DE-CENTRO-IV .overlap-group-wrapper {
+  position: absolute;
+  width: 369px;
+  height: 513px;
+  top: 0;
+  left: 486px;
+}
+
+.MESA-DE-CENTRO-IV .overlap-group {
+  position: relative;
+  height: 513px;
+}
+
+.MESA-DE-CENTRO-IV .div-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  height: 513px;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.MESA-DE-CENTRO-IV .frame-4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.MESA-DE-CENTRO-IV .button-2 {
+  position: absolute;
+  top: 390px;
+  left: 108px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #2e7d32;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 5px 4.8px 2px #00000080;
+}
+
+.MESA-DE-CENTRO-IV .home {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  top: 516px;
+  left: 628px;
+}
+
+.MESA-DE-CENTRO-IV .overlap {
+  position: absolute;
+  width: 369px;
+  height: 598px;
+  top: 0;
+  left: 868px;
+}
+
+.MESA-DE-CENTRO-IV .overlap-wrapper {
+  position: absolute;
+  width: 369px;
+  height: 513px;
+  top: 0;
+  left: 0;
+}
+
+.MESA-DE-CENTRO-IV .button-3 {
+  position: absolute;
+  top: 391px;
+  left: 108px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #2e7d32;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 5px 4.8px 2px #00000080;
+}
+
+.MESA-DE-CENTRO-IV .arrow-right-circle {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  top: 509px;
+  left: 280px;
+}
+
+.MESA-DE-CENTRO-IV .arrow-left-circle {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  top: 516px;
+  left: 96px;
+}
