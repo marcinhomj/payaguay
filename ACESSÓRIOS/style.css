@@ -1,0 +1,176 @@
+.ACESSORIOS-i {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  background-color: #d9d9d9;
+}
+
+.ACESSORIOS-i .AGRICULTURA {
+  display: flex;
+  flex-direction: column;
+  height: 960px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px 60px;
+  position: relative;
+  width: 1920px;
+  background-color: #d9d9d9;
+}
+
+.ACESSORIOS-i .frame {
+  display: flex;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.ACESSORIOS-i .frame .text-wrapper {
+  position: relative;
+  flex: 1;
+  height: 160px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #2e7d32;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ACESSORIOS-i .div {
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.ACESSORIOS-i .frame-2 {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ACESSORIOS-i .frame-wrapper {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #2e7d32;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ACESSORIOS-i .frame-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.ACESSORIOS-i .rectangle {
+  width: 330px;
+  height: 330px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.ACESSORIOS-i .mesa-de-jantar-maci {
+  width: 100%;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 15px 0;
+}
+
+.ACESSORIOS-i .button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ACESSORIOS-i .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #2e7d32;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 5px 4.8px 2px #00000080;
+}
+
+.ACESSORIOS-i .button .text-wrapper {
+  width: fit-content;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #cfcfcf;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  height: auto;
+}
+
+.ACESSORIOS-i .overlap {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ACESSORIOS-i .overlap-wrapper {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ACESSORIOS-i .home {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ACESSORIOS-i .arrow-right-circle {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  bottom: -40px;
+  right: 0;
+}
+
+.ACESSORIOS-i .arrow-left-circle {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  bottom: -40px;
+  left: 0;
+}
