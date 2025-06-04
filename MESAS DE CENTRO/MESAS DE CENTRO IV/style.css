@@ -1,17 +1,45 @@
-.MESA-DE-CENTRO-IV {
-  display: flex;
-  flex-direction: column;
-  height: 1033px;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 391px;
-  position: relative;
-  background-color: #c4c4c480;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.MESA-DE-CENTRO-IV .frame {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.MESAS-DE-CENTRO-iv {
   display: flex;
-  height: 191px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  background-color: #d9d9d9;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.MESAS-DE-CENTRO-iv .AGRICULTURA {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px 120px;
+  position: relative;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.MESAS-DE-CENTRO-iv .frame {
+  display: flex;
+  height: 120px;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -19,14 +47,13 @@
   position: relative;
   align-self: stretch;
   width: 100%;
+  margin-bottom: 40px;
 }
 
-.MESA-DE-CENTRO-IV .MESAS-DE-CENTRO {
+.MESAS-DE-CENTRO-iv .frame .text-wrapper {
   position: relative;
   flex: 1;
-  height: 216px;
-  margin-top: -33.50px;
-  margin-bottom: -31.50px;
+  height: auto;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
   color: #2e7d32;
@@ -36,54 +63,57 @@
   line-height: normal;
 }
 
-.MESA-DE-CENTRO-IV .div {
+.MESAS-DE-CENTRO-iv .div {
   position: relative;
-  width: 1333px;
-  height: 598px;
-  margin-left: -97.50px;
-  margin-right: -97.50px;
-}
-
-.MESA-DE-CENTRO-IV .frame-2 {
-  position: absolute;
-  width: 378px;
-  height: 462px;
-  top: 0;
-  left: 96px;
-}
-
-.MESA-DE-CENTRO-IV .frame-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  height: 391px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   align-items: flex-start;
-  position: absolute;
-  top: 0;
-  left: 4px;
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
-.MESA-DE-CENTRO-IV .frame-3 {
-  display: inline-flex;
+.MESAS-DE-CENTRO-iv .frame-2,
+.MESAS-DE-CENTRO-iv .overlap,
+.MESAS-DE-CENTRO-iv .overlap-wrapper {
+  width: 350px;
+  height: 500px;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.MESAS-DE-CENTRO-iv .frame-wrapper {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #2e7d32;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MESAS-DE-CENTRO-iv .frame-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 15px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-bottom: -36.00px;
 }
 
-.MESA-DE-CENTRO-IV .rectangle {
-  position: relative;
-  width: 377px;
-  height: 345px;
-  margin-left: -4.00px;
-  margin-right: -4.00px;
+.MESAS-DE-CENTRO-iv .rectangle {
+  width: 330px;
+  height: 330px;
+  object-fit: contain;
+  object-position: center;
 }
 
-.MESA-DE-CENTRO-IV .mesa-de-jantar-maci {
-  position: relative;
-  width: 369px;
-  height: 75px;
+.MESAS-DE-CENTRO-iv .mesa-de-jantar-maci {
+  width: 100%;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
   color: #000000;
@@ -91,142 +121,201 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  margin: 15px 0;
 }
 
-.MESA-DE-CENTRO-IV .button-wrapper {
-  position: absolute;
-  width: 378px;
-  height: 56px;
-  top: 391px;
-  left: 0;
+.MESAS-DE-CENTRO-iv .button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-.MESA-DE-CENTRO-IV .button {
-  position: relative;
-  left: 112px;
+.MESAS-DE-CENTRO-iv .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px;
+  padding: 12px 24px;
   background-color: #2e7d32;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 4px 5px 4.8px 2px #00000080;
-}
-
-.MESA-DE-CENTRO-IV .text-wrapper {
-  position: relative;
+  text-decoration: none;
+  transition: transform 0.2s ease;
   width: fit-content;
-  margin-top: -1.00px;
-  font-family: var(--single-line-body-base-font-family);
-  font-weight: var(--single-line-body-base-font-weight);
+}
+
+.MESAS-DE-CENTRO-iv .button:hover {
+  transform: scale(1.05);
+}
+
+.MESAS-DE-CENTRO-iv .button .text-wrapper {
+  width: fit-content;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
   color: #cfcfcf;
-  font-size: var(--single-line-body-base-font-size);
+  font-size: 16px;
   text-align: center;
-  letter-spacing: var(--single-line-body-base-letter-spacing);
-  line-height: var(--single-line-body-base-line-height);
-  font-style: var(--single-line-body-base-font-style);
+  letter-spacing: 0;
+  line-height: normal;
+  height: auto;
+  white-space: normal;
 }
 
-.MESA-DE-CENTRO-IV .overlap-group-wrapper {
-  position: absolute;
-  width: 369px;
-  height: 513px;
-  top: 0;
-  left: 486px;
-}
-
-.MESA-DE-CENTRO-IV .overlap-group {
-  position: relative;
-  height: 513px;
-}
-
-.MESA-DE-CENTRO-IV .div-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  height: 513px;
-  align-items: flex-start;
-  position: absolute;
-  top: 0;
+.MESAS-DE-CENTRO-iv .navigation-buttons {
+  position: fixed;
+  bottom: 0;
   left: 0;
-}
-
-.MESA-DE-CENTRO-IV .frame-4 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.MESA-DE-CENTRO-IV .button-2 {
-  position: absolute;
-  top: 390px;
-  left: 108px;
-  display: inline-flex;
-  align-items: center;
+  right: 0;
+  display: flex;
   justify-content: center;
-  gap: 8px;
-  padding: 12px;
-  background-color: #2e7d32;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 4px 5px 4.8px 2px #00000080;
-}
-
-.MESA-DE-CENTRO-IV .home {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  top: 516px;
-  left: 628px;
-}
-
-.MESA-DE-CENTRO-IV .overlap {
-  position: absolute;
-  width: 369px;
-  height: 598px;
-  top: 0;
-  left: 868px;
-}
-
-.MESA-DE-CENTRO-IV .overlap-wrapper {
-  position: absolute;
-  width: 369px;
-  height: 513px;
-  top: 0;
-  left: 0;
-}
-
-.MESA-DE-CENTRO-IV .button-3 {
-  position: absolute;
-  top: 391px;
-  left: 108px;
-  display: inline-flex;
   align-items: center;
+  gap: 40px;
+  padding: 15px;
+  background: #d9d9d9;
+  z-index: 1000;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.MESAS-DE-CENTRO-iv .nav-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
   justify-content: center;
-  gap: 8px;
-  padding: 12px;
-  background-color: #2e7d32;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 4px 5px 4.8px 2px #00000080;
+  align-items: center;
+  background: #2e7d32;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-decoration: none;
 }
 
-.MESA-DE-CENTRO-IV .arrow-right-circle {
-  position: absolute;
-  width: 89px;
-  height: 89px;
-  top: 509px;
-  left: 280px;
+.MESAS-DE-CENTRO-iv .nav-button:hover {
+  transform: scale(1.1);
 }
 
-.MESA-DE-CENTRO-IV .arrow-left-circle {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  top: 516px;
-  left: 96px;
+.MESAS-DE-CENTRO-iv .nav-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.MESAS-DE-CENTRO-iv .nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .MESAS-DE-CENTRO-iv {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 60px;
+    margin: 0;
+  }
+
+  .MESAS-DE-CENTRO-iv .AGRICULTURA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 12px 12px 60px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+  }
+
+  .MESAS-DE-CENTRO-iv .frame {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .MESAS-DE-CENTRO-iv .frame .text-wrapper {
+    font-size: 24px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #2e7d32;
+  }
+
+  .MESAS-DE-CENTRO-iv .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    gap: 16px;
+    padding: 0 12px;
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+
+  .MESAS-DE-CENTRO-iv .frame-2,
+  .MESAS-DE-CENTRO-iv .overlap,
+  .MESAS-DE-CENTRO-iv .overlap-wrapper {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MESAS-DE-CENTRO-iv .frame-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    border: none;
+    padding: 8px;
+  }
+
+  .MESAS-DE-CENTRO-iv .rectangle {
+    width: 100%;
+    height: 100%;
+    max-width: 264px;
+    max-height: 264px;
+  }
+
+  .MESAS-DE-CENTRO-iv .mesa-de-jantar-maci {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .MESAS-DE-CENTRO-iv .button {
+    padding: 10px 20px;
+    width: fit-content;
+    min-width: auto;
+  }
+
+  .MESAS-DE-CENTRO-iv .button .text-wrapper {
+    font-size: 14px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .MESAS-DE-CENTRO-iv .navigation-buttons {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .MESAS-DE-CENTRO-iv .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .MESAS-DE-CENTRO-iv .nav-button img {
+    width: 20px;
+    height: 20px;
+  }
 }
