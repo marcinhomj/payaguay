@@ -1,23 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  min-height: 100vh;
+}
+
 .APARADORES-i {
   display: flex;
   flex-direction: column;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   align-items: center;
   position: relative;
   margin: 0 auto;
   background-color: #d9d9d9;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .APARADORES-i .AGRICULTURA {
   display: flex;
   flex-direction: column;
-  height: 960px;
+  min-height: 960px;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px 20px 60px;
+  padding: 40px 20px 40px;
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   background-color: #d9d9d9;
+  box-sizing: border-box;
 }
 
 .APARADORES-i .frame {
@@ -33,7 +47,7 @@
   margin-bottom: 30px;
 }
 
-.APARADORES-i .APARADORES-ESTANTES {
+.APARADORES-i .frame .text-wrapper {
   position: relative;
   flex: 1;
   height: 160px;
@@ -48,40 +62,40 @@
 
 .APARADORES-i .div {
   position: relative;
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   align-items: flex-start;
   padding: 0 20px;
+  margin-top: -40px;
+  box-sizing: border-box;
 }
 
-.APARADORES-i .frame-2 {
+.APARADORES-i .frame-2,
+.APARADORES-i .overlap,
+.APARADORES-i .overlap-wrapper {
   width: 350px;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .APARADORES-i .frame-wrapper {
   width: 100%;
-  height: 350px;
+  height: auto;
+  min-height: 350px;
   border: 1px solid #2e7d32;
   padding: 10px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.APARADORES-i .frame-3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
 }
 
 .APARADORES-i .rectangle {
@@ -108,6 +122,8 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .APARADORES-i .button {
@@ -122,7 +138,7 @@
   box-shadow: 4px 5px 4.8px 2px #00000080;
 }
 
-.APARADORES-i .text-wrapper {
+.APARADORES-i .button .text-wrapper {
   width: fit-content;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
@@ -131,45 +147,186 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  height: auto;
 }
 
-.APARADORES-i .overlap {
-  width: 350px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.APARADORES-i .overlap-wrapper {
-  width: 350px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.APARADORES-i .home {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.APARADORES-i .arrow-right-circle {
-  position: absolute;
-  width: 89px;
-  height: 89px;
-  bottom: -40px;
-  right: 0;
-}
-
-.APARADORES-i .arrow-left-circle {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  bottom: -40px;
+.APARADORES-i .navigation-buttons {
+  position: fixed;
+  bottom: 0;
   left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 15px;
+  background: #d9d9d9;
+  z-index: 1000;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.APARADORES-i .nav-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e7d32;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.APARADORES-i .nav-button:hover {
+  transform: scale(1.1);
+}
+
+.APARADORES-i .nav-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .APARADORES-i {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 60px;
+  }
+
+  .APARADORES-i .AGRICULTURA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 12px 12px 60px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .APARADORES-i .frame {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  .APARADORES-i .frame .text-wrapper {
+    font-size: 24px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #2e7d32;
+  }
+
+  .APARADORES-i .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    gap: 16px;
+    padding: 0 12px;
+    margin-bottom: 60px;
+    margin-top: -30px;
+}
+
+  .APARADORES-i .frame-2,
+  .APARADORES-i .overlap,
+  .APARADORES-i .overlap-wrapper {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .APARADORES-i .frame-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .APARADORES-i .rectangle {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 0 8px 0;
+    border-radius: 8px;
+  }
+
+  .APARADORES-i .mesa-de-jantar-maci {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+    padding: 0 4px;
+}
+
+  .APARADORES-i .button-wrapper {
+    width: 100%;
+    padding: 0 8px;
+    margin: 4px 0 0 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .APARADORES-i .button {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .APARADORES-i .button .text-wrapper {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .APARADORES-i .navigation-buttons {
+    bottom: 0;
+    gap: 24px;
+    padding: 16px 0;
+    background: #d9d9d9;
+    border-top: none;
+    z-index: 10;
+    height: 80px;
+  }
+
+  .APARADORES-i .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .APARADORES-i .nav-button img {
+    width: 20px;
+    height: 20px;
+  }
 }
