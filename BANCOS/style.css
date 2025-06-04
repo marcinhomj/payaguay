@@ -1,26 +1,40 @@
-.BANCOS-i {
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  min-height: 100vh;
+}
+
+.BANCOS {
   display: flex;
   flex-direction: column;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   align-items: center;
   position: relative;
   margin: 0 auto;
   background-color: #d9d9d9;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
-.BANCOS-i .AGRICULTURA {
+.BANCOS .AGRICULTURA {
   display: flex;
   flex-direction: column;
-  height: 960px;
+  min-height: 960px;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px 20px 60px;
+  padding: 40px 20px 40px;
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   background-color: #d9d9d9;
+  box-sizing: border-box;
 }
 
-.BANCOS-i .frame {
+.BANCOS .frame {
   display: flex;
   height: 160px;
   align-items: center;
@@ -33,7 +47,7 @@
   margin-bottom: 30px;
 }
 
-.BANCOS-i .text-wrapper {
+.BANCOS .frame .text-wrapper {
   position: relative;
   flex: 1;
   height: 160px;
@@ -44,57 +58,54 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.BANCOS-i .div {
+.BANCOS .div {
   position: relative;
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   align-items: flex-start;
   padding: 0 20px;
+  margin-top: -40px;
+  box-sizing: border-box;
 }
 
-.BANCOS-i .frame-2 {
+.BANCOS .frame-2,
+.BANCOS .overlap,
+.BANCOS .overlap-wrapper {
   width: 350px;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-.BANCOS-i .frame-wrapper {
+.BANCOS .frame-wrapper {
   width: 100%;
-  height: 350px;
+  height: auto;
+  min-height: 350px;
   border: 1px solid #2e7d32;
   padding: 10px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.BANCOS-i .frame-3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.BANCOS-i .rectangle {
+.BANCOS .rectangle {
   width: 330px;
   height: 330px;
   object-fit: contain;
   object-position: center;
 }
 
-.BANCOS-i .mesa-de-jantar-maci {
+.BANCOS .mesa-de-jantar-maci {
   width: 100%;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
@@ -106,14 +117,16 @@
   margin: 15px 0;
 }
 
-.BANCOS-i .button-wrapper {
+.BANCOS .button-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
-.BANCOS-i .button {
+.BANCOS .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -123,67 +136,197 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 4px 5px 4.8px 2px #00000080;
-  width: auto;
-  min-width: 180px;
 }
 
-.BANCOS-i .button p.text-wrapper {
+.BANCOS .button .text-wrapper {
   width: fit-content;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
-  color: #ffffff;
+  color: #cfcfcf;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  margin: 0;
-  padding: 0;
   height: auto;
 }
 
-.BANCOS-i .button:hover {
-  transform: scale(1.05);
-  background-color: #1b5e20;
-  box-shadow: 6px 7px 6px 2px #00000080;
-}
-
-.BANCOS-i .overlap {
-  width: 350px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.BANCOS-i .overlap-wrapper {
-  width: 350px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.BANCOS-i .home {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.BANCOS-i .arrow-right-circle {
-  position: absolute;
-  width: 89px;
-  height: 89px;
-  bottom: -40px;
-  right: 0;
-}
-
-.BANCOS-i .arrow-left-circle {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  bottom: -40px;
+.BANCOS .navigation-buttons {
+  position: fixed;
+  bottom: 0;
   left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 15px;
+  background: #d9d9d9;
+  z-index: 1000;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.BANCOS .nav-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e7d32;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.BANCOS .nav-button:hover {
+  transform: scale(1.1);
+}
+
+.BANCOS .nav-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .BANCOS {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 60px;
+  }
+
+  .BANCOS .AGRICULTURA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 12px 12px 60px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .BANCOS .frame {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  .BANCOS .frame .text-wrapper {
+    font-size: 24px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #2e7d32;
+  }
+
+  .BANCOS .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    gap: 16px;
+    padding: 0 12px;
+    margin-bottom: 60px;
+    margin-top: -30px;
+  }
+
+  .BANCOS .frame-2,
+  .BANCOS .overlap,
+  .BANCOS .overlap-wrapper {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .BANCOS .frame-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .BANCOS .rectangle {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 0 8px 0;
+    border-radius: 8px;
+  }
+
+  .BANCOS .mesa-de-jantar-maci {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+    padding: 0 4px;
+  }
+
+  .BANCOS .button-wrapper {
+    width: 100%;
+    padding: 0 8px;
+    margin: 4px 0 0 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .BANCOS .button {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .BANCOS .button .text-wrapper {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .BANCOS .navigation-buttons {
+    bottom: 0;
+    gap: 24px;
+    padding: 16px 0;
+    background: #d9d9d9;
+    border-top: none;
+    z-index: 10;
+    height: 80px;
+  }
+
+  .BANCOS .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .BANCOS .nav-button img {
+    width: 20px;
+    height: 20px;
+  }
 }
