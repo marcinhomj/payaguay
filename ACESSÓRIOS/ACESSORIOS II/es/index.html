@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../globals.css" />
+    <link rel="stylesheet" href="../../../styleguide.css" />
+    <link rel="stylesheet" href="../../../style.css" />
+    <style>
+      .ACESSORIOS-II {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1920px;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        background-color: #d9d9d9;
+        min-height: 100vh;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+      }
+
+      .ACESSORIOS-II .AGRICULTURA {
+        display: flex;
+        flex-direction: column;
+        min-height: 960px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 20px 40px;
+        position: relative;
+        width: 100%;
+        max-width: 1920px;
+        background-color: #d9d9d9;
+        box-sizing: border-box;
+      }
+
+      .ACESSORIOS-II .frame {
+        display: flex;
+        height: 160px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 0px;
+        position: relative;
+        align-self: stretch;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .ACESSORIOS-II .frame .text-wrapper {
+        position: relative;
+        flex: 1;
+        height: 160px;
+        font-family: "Roboto-Regular", Helvetica;
+        font-weight: 400;
+        color: #2e7d32;
+        font-size: 64px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .ACESSORIOS-II .div {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        min-height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 0 20px;
+        margin-top: -40px;
+        box-sizing: border-box;
+      }
+
+      .ACESSORIOS-II .frame-2,
+      .ACESSORIOS-II .overlap,
+      .ACESSORIOS-II .overlap-wrapper {
+        width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .ACESSORIOS-II .frame-wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 350px;
+        border: 1px solid #2e7d32;
+        padding: 10px;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ACESSORIOS-II .rectangle {
+        width: 330px;
+        height: 330px;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      .ACESSORIOS-II .mesa-de-jantar-maci {
+        width: 100%;
+        font-family: "Roboto-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 17px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        margin: 15px 0;
+      }
+
+      .ACESSORIOS-II .button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .ACESSORIOS-II .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 24px;
+        background-color: #2e7d32;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 4px 5px 4.8px 2px #00000080;
+      }
+
+      .ACESSORIOS-II .button .text-wrapper {
+        width: fit-content;
+        font-family: "Roboto-Regular", Helvetica;
+        font-weight: 400;
+        color: #cfcfcf;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+        height: auto;
+      }
+
+      .ACESSORIOS-II .navigation-buttons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 15px;
+        background: #d9d9d9;
+        z-index: 1000;
+        border-top: 1px solid rgba(0,0,0,0.1);
+      }
+
+      .ACESSORIOS-II .nav-button {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2e7d32;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+
+      .ACESSORIOS-II .nav-button:hover {
+        transform: scale(1.1);
+      }
+
+      .ACESSORIOS-II .nav-button img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+
+      @media screen and (max-width: 768px) {
+        .ACESSORIOS-II {
+          width: 100%;
+          min-height: 100vh;
+          background-color: #d9d9d9;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 0 60px;
+        }
+
+        .ACESSORIOS-II .AGRICULTURA {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          min-height: calc(100vh - 80px);
+          padding: 12px 12px 60px;
+          box-sizing: border-box;
+          position: relative;
+        }
+
+        .ACESSORIOS-II .frame {
+          width: 100%;
+          height: auto;
+          padding: 0;
+          margin-bottom: 8px;
+        }
+
+        .ACESSORIOS-II .frame .text-wrapper {
+          font-size: 24px;
+          height: auto;
+          padding: 0;
+          margin: 0;
+          font-family: "Roboto-Regular", Helvetica;
+          font-weight: 400;
+          color: #2e7d32;
+        }
+
+        .ACESSORIOS-II .div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          min-height: auto;
+          gap: 16px;
+          padding: 0 12px;
+          margin-bottom: 60px;
+          margin-top: -30px;
+        }
+
+        .ACESSORIOS-II .frame-2,
+        .ACESSORIOS-II .overlap,
+        .ACESSORIOS-II .overlap-wrapper {
+          width: 100%;
+          max-width: 280px;
+          height: auto;
+          margin: 0 0 20px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: transparent;
+          border-radius: 0;
+          box-shadow: none;
+          padding: 12px;
+          gap: 8px;
+        }
+
+        .ACESSORIOS-II .frame-wrapper {
+          width: 100%;
+          height: auto;
+          min-height: 200px;
+          border: none;
+          padding: 0;
+          margin: 0;
+          overflow: visible;
+        }
+
+        .ACESSORIOS-II .rectangle {
+          width: 100%;
+          max-width: 200px;
+          height: auto;
+          margin: 0 0 8px 0;
+          border-radius: 8px;
+        }
+
+        .ACESSORIOS-II .mesa-de-jantar-maci {
+          font-size: 14px;
+          line-height: 1.3;
+          margin: 0 0 8px 0;
+          padding: 0 4px;
+        }
+
+        .ACESSORIOS-II .button-wrapper {
+          width: 100%;
+          padding: 0 8px;
+          margin: 4px 0 0 0;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          z-index: 2;
+        }
+
+        .ACESSORIOS-II .button {
+          width: 100%;
+          max-width: 200px;
+          padding: 8px 16px;
+          font-size: 14px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .ACESSORIOS-II .button .text-wrapper {
+          font-size: 14px;
+          font-weight: 500;
+          text-align: center;
+          line-height: 1.3;
+        }
+
+        .ACESSORIOS-II .navigation-buttons {
+          bottom: 0;
+          gap: 24px;
+          padding: 16px 0;
+          background: #d9d9d9;
+          border-top: none;
+          z-index: 10;
+          height: 80px;
+        }
+
+        .ACESSORIOS-II .nav-button {
+          width: 40px;
+          height: 40px;
+        }
+
+        .ACESSORIOS-II .nav-button img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ACESSORIOS-II">
+      <div class="AGRICULTURA">
+        <div class="frame">
+          <div class="text-wrapper">ACCESORIOS</div>
+        </div>
+        <div class="div">
+          <div class="frame-2">
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <img class="rectangle" src="../img/movel1.png" alt="Accesorio I" />
+              </div>
+            </div>
+            <p class="mesa-de-jantar-maci">Decoración Guajuvira III – 44x32x52cm</p>
+            <div class="button-wrapper">
+              <a href="mailto:payaguay@payaguay.com.py" target="_blank" rel="noopener noreferrer">
+                <div class="button">
+                  <p class="text-wrapper">¡Contáctenos<br />y adquiera el suyo!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="overlap">
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <img class="rectangle" src="../img/movel2.png" alt="Accesorio II" />
+              </div>
+            </div>
+            <p class="mesa-de-jantar-maci">Decoración Guajuvira IV – 44x32x52cm</p>
+            <div class="button-wrapper">
+              <a href="mailto:payaguay@payaguay.com.py" target="_blank" rel="noopener noreferrer">
+                <div class="button">
+                  <p class="text-wrapper">¡Contáctenos<br />y adquiera el suyo!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="overlap-wrapper">
+            <div class="frame-wrapper">
+              <div class="frame-3">
+                <img class="rectangle" src="../img/movel3.png" alt="Accesorio III" />
+              </div>
+            </div>
+            <p class="mesa-de-jantar-maci">Decoración Guajuvira V – 103x80x4cm</p>
+            <div class="button-wrapper">
+              <a href="mailto:payaguay@payaguay.com.py" target="_blank" rel="noopener noreferrer">
+                <div class="button">
+                  <p class="text-wrapper">¡Contáctenos<br />y adquiera el suyo!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="navigation-buttons">
+            <button class="nav-button" onclick="window.location.href='../../ACESSORIOS I/es/index.html'">
+              <img src="../img/arrow-left-circle.svg" alt="Atrás">
+            </button>
+            <button class="nav-button" onclick="window.location.href='../../../es/index.html#MOVEIS'">
+              <img src="../img/home.svg" alt="Inicio">
+            </button>
+            <button class="nav-button" onclick="window.location.href='../../ACESSORIOS III/es/index.html'">
+              <img src="../img/arrow-right-circle.svg" alt="Siguiente">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
