@@ -1,26 +1,40 @@
-.BOLACHAS-IV {
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  min-height: 100vh;
+}
+
+.MESAS-BOLACHAS-iv {
   display: flex;
   flex-direction: column;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   align-items: center;
   position: relative;
   margin: 0 auto;
   background-color: #d9d9d9;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
-.BOLACHAS-IV .AGRICULTURA {
+.MESAS-BOLACHAS-iv .AGRICULTURA {
   display: flex;
   flex-direction: column;
-  height: 960px;
+  min-height: 960px;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px 20px 60px;
+  padding: 40px 20px 40px;
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   background-color: #d9d9d9;
+  box-sizing: border-box;
 }
 
-.BOLACHAS-IV .frame {
+.MESAS-BOLACHAS-iv .frame {
   display: flex;
   height: 160px;
   align-items: center;
@@ -33,7 +47,7 @@
   margin-bottom: 30px;
 }
 
-.BOLACHAS-IV .frame .text-wrapper {
+.MESAS-BOLACHAS-iv .frame .text-wrapper {
   position: relative;
   flex: 1;
   height: 160px;
@@ -46,56 +60,52 @@
   line-height: normal;
 }
 
-.BOLACHAS-IV .div {
+.MESAS-BOLACHAS-iv .div {
   position: relative;
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   align-items: flex-start;
   padding: 0 20px;
+  margin-top: -40px;
+  box-sizing: border-box;
 }
 
-.BOLACHAS-IV .frame-2,
-.BOLACHAS-IV .overlap,
-.BOLACHAS-IV .overlap-wrapper {
+.MESAS-BOLACHAS-iv .frame-2,
+.MESAS-BOLACHAS-iv .overlap,
+.MESAS-BOLACHAS-iv .overlap-wrapper {
   width: 350px;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
-.BOLACHAS-IV .frame-wrapper {
+.MESAS-BOLACHAS-iv .frame-wrapper {
   width: 100%;
-  height: 350px;
+  height: auto;
+  min-height: 350px;
   border: 1px solid #2e7d32;
   padding: 10px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
 }
 
-.BOLACHAS-IV .frame-3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.BOLACHAS-IV .rectangle {
+.MESAS-BOLACHAS-iv .rectangle {
   width: 330px;
   height: 330px;
   object-fit: contain;
   object-position: center;
 }
 
-.BOLACHAS-IV .mesa-de-jantar-maci {
+.MESAS-BOLACHAS-iv .mesa-de-jantar-maci {
   width: 100%;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
@@ -104,22 +114,19 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  margin: 0 0 15px 0;
-  min-height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 15px 0;
 }
 
-.BOLACHAS-IV .button-wrapper {
+.MESAS-BOLACHAS-iv .button-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: auto;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
-.BOLACHAS-IV .button {
+.MESAS-BOLACHAS-iv .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +138,7 @@
   box-shadow: 4px 5px 4.8px 2px #00000080;
 }
 
-.BOLACHAS-IV .button .text-wrapper {
+.MESAS-BOLACHAS-iv .button .text-wrapper {
   width: fit-content;
   font-family: "Roboto-Regular", Helvetica;
   font-weight: 400;
@@ -143,27 +150,145 @@
   height: auto;
 }
 
-.BOLACHAS-IV .home {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.BOLACHAS-IV .arrow-right-circle {
-  position: absolute;
-  width: 89px;
-  height: 89px;
-  bottom: -40px;
-  right: 0;
-}
-
-.BOLACHAS-IV .arrow-left-circle {
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  bottom: -40px;
+.MESAS-BOLACHAS-iv .navigation-buttons {
+  position: fixed;
+  bottom: 0;
   left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 15px;
+  background: #d9d9d9;
+  z-index: 1000;
+}
+
+.MESAS-BOLACHAS-iv .nav-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e7d32;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.MESAS-BOLACHAS-iv .nav-button:hover {
+  transform: scale(1.1);
+}
+
+.MESAS-BOLACHAS-iv .nav-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .MESAS-BOLACHAS-iv {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 60px;
+  }
+
+  .MESAS-BOLACHAS-iv .AGRICULTURA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 12px 12px 60px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .MESAS-BOLACHAS-iv .frame {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  .MESAS-BOLACHAS-iv .frame .text-wrapper {
+    font-size: 24px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #2e7d32;
+  }
+
+  .MESAS-BOLACHAS-iv .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    gap: 16px;
+    padding: 0 12px;
+    margin-bottom: 60px;
+    margin-top: -30px;
+  }
+
+  .MESAS-BOLACHAS-iv .frame-2,
+  .MESAS-BOLACHAS-iv .overlap,
+  .MESAS-BOLACHAS-iv .overlap-wrapper {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MESAS-BOLACHAS-iv .frame-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    border: none;
+    padding: 8px;
+  }
+
+  .MESAS-BOLACHAS-iv .rectangle {
+    width: 100%;
+    height: 100%;
+    max-width: 264px;
+    max-height: 264px;
+  }
+
+  .MESAS-BOLACHAS-iv .mesa-de-jantar-maci {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .MESAS-BOLACHAS-iv .button {
+    padding: 10px 20px;
+  }
+
+  .MESAS-BOLACHAS-iv .button .text-wrapper {
+    font-size: 14px;
+  }
+
+  .MESAS-BOLACHAS-iv .navigation-buttons {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .MESAS-BOLACHAS-iv .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .MESAS-BOLACHAS-iv .nav-button img {
+    width: 20px;
+    height: 20px;
+  }
 }
