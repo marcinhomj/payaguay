@@ -1871,6 +1871,50 @@ html {
     height: 110%;
     margin-left: -5%;
   }
+
+  .LANDING .AGRICULTURA-2,
+  .LANDING .PECUARIA {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .LANDING .overlap-group-2,
+  .LANDING .overlap-group-3 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    bottom: auto;
+  }
+
+  .LANDING .rectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+  }
+
+  .LANDING .p,
+  .LANDING .div-2 {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .LANDING .span {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -3294,5 +3338,99 @@ html {
   }
   100% {
     transform: translateX(-200%); /* Hold third image, then animation loops back to 0% */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .LANDING .FILOSOFIA,
+  .LANDING .CAIXA-DE-TEXTO-wrapper,
+  .LANDING .PECUARIA-2,
+  .LANDING .AGRICULTURA-2,
+  .LANDING .PECUARIA,
+  .LANDING .YUSARA {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .LANDING .overlap-group,
+  .LANDING .overlap-group-2,
+  .LANDING .overlap-group-3,
+  .LANDING .overlap-group-4,
+  .LANDING .overlap-group-5 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    bottom: auto;
+  }
+
+  .LANDING .text-wrapper-5,
+  .LANDING .p,
+  .LANDING .div-2,
+  .LANDING .text-wrapper-6 {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .LANDING .span {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .LANDING .CAIXA-DE-TEXTO {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .LANDING .rectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+  }
+
+  .LANDING .CAIXA-DE-TEXTO-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .LANDING .CAIXA-DE-TEXTO-wrapper .CAIXA-DE-TEXTO {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .LANDING .CAIXA-DE-TEXTO-wrapper .overlap-group-2 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .LANDING .CAIXA-DE-TEXTO-wrapper .rectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
   }
 }
